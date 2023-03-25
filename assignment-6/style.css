@@ -1,0 +1,430 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: auto;
+  width: 100vw;
+  min-height: 100vh;
+}
+a,
+button {
+  all: unset;
+}
+section {
+  /* max-width: 1200px; */
+  margin-left: 10%;
+  margin-bottom: 5%;
+  width: 80%;
+  padding: 2% 2% 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+section .header .right {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+.company-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #272d38;
+  transition: all 1000ms;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  /* font */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: lowercase;
+  color: #272d38;
+  transition: all 1000ms;
+}
+nav a:hover {
+  cursor: pointer;
+  border-bottom: solid 1px grey;
+}
+
+.hamburger-button {
+  background-color: transparent;
+  cursor: pointer;
+  border: 10px;
+  color: #272d38;
+  cursor: pointer;
+  font-size: 30px;
+  float: right;
+  display: none;
+  transition: all 1000ms;
+}
+
+.title {
+  margin-top: 40px;
+  /* font */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #272d38;
+}
+.texts {
+  margin-top: 30px;
+  /* font */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #272d38;
+}
+section .contact-btn {
+  cursor: pointer;
+  background: #8eadd5;
+  border-radius: 8px;
+  margin-top: 50px;
+  padding: 10px 30px;
+  /* Font */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+section .contact-btn:hover {
+  background-color: darkblue;
+}
+.small-text {
+  margin: 0 auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #667085;
+}
+section#trusted-by-companies {
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.companies {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  padding: 20px 20px;
+}
+.companies img {
+  max-width: 100%;
+}
+section button.arrow {
+  margin-top: 50px;
+  cursor: pointer;
+}
+section#branding-design-system .right {
+  display: block;
+}
+section#testimonial {
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+section .small-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #272d38;
+}
+section#testimonial .testimonial {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  width: 100%;
+  text-align: center;
+}
+section#testimonial .title {
+  margin-top: 0px;
+}
+section#testimonial .testimonial .testimonial-items {
+  background: #f6f6f6;
+  border-radius: 20px;
+  padding: 10px;
+}
+section#testimonial .testimonial .testimonial-items .name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #272d38;
+}
+section#testimonial .testimonial .testimonial-items .testi-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 130%;
+  text-transform: capitalize;
+  color: #272d38;
+}
+section#contact {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+}
+section#contact .left {
+  display: flex;
+  justify-content: center;
+}
+section#contact .right {
+  display: block;
+}
+section#contact .title {
+  text-transform: none;
+}
+footer {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-row-1 {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-evenly;
+}
+footer .footer-items {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  gap: 10px;
+  width: 20%;
+}
+footer .footer-items .footer-item-parent {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #272d38;
+}
+footer .footer-items .footer-item-child {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #272d38;
+}
+footer .footer-items .footer-item-child a {
+  cursor: pointer;
+}
+footer .copyright {
+  padding-top: 140px;
+  padding-bottom: 18px;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  color: #272d38;
+}
+/* when mobile @ screen < 600px, menu inside hamburger */
+@media (max-width: 600px) {
+  .company-name {
+    text-transform: none;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
+  section.header {
+    flex-wrap: nowrap;
+  }
+  section.header .right {
+    flex-direction: row;
+    justify-content: end;
+  }
+  section#hero {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+
+  section .left {
+    width: 100%;
+  }
+
+  section .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section .title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .companies {
+    gap: 5%;
+  }
+
+  section#branding-design-system {
+    flex-direction: column-reverse;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  section#custome,
+  section#testimonial .testimonial,
+  section#contact {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  section button.arrow {
+    transform: rotate(90deg);
+  }
+  section#contact .left {
+    display: none;
+  }
+
+  footer .footer-row-1 {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    margin: 0 auto;
+  }
+
+  footer .footer-items {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+/* when tablet @ screen < 800px, >600px */
+@media (max-width: 800px) and (min-width: 600px) {
+  .company-name {
+    text-transform: none;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
+  section.header {
+    flex-wrap: nowrap;
+  }
+  section.header .right {
+    flex-direction: row;
+    justify-content: end;
+  }
+  section#hero {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+
+  section .left {
+    width: 100%;
+  }
+
+  section .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section .title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .companies {
+    gap: 5%;
+  }
+
+  section#branding-design-system {
+    flex-direction: column-reverse;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  section#custome,
+  section#testimonial .testimonial,
+  section#contact {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  section button.arrow {
+    transform: rotate(90deg);
+  }
+  section#contact .left {
+    display: none;
+  }
+
+  footer .footer-row-1 {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    margin: 0 auto;
+  }
+
+  footer .footer-items {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
